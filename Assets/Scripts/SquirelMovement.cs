@@ -26,6 +26,7 @@ public class SquirelMovement : MonoBehaviour {
 	}
 
 	// Do Graphic & Input updates here
+
 	void Update() {
 		if(dead) {
 			deathCooldown -= Time.deltaTime;
@@ -47,35 +48,35 @@ public class SquirelMovement : MonoBehaviour {
 	// Do physics engine updates here
 	void FixedUpdate () {
 
-		if (dead) {
-			return;
-		}
+	//	if(dead)
+	//		return;
 
-		rigidbody2D.AddForce( Vector2.right * forwardSpeed );  //this allows our player to move forward
+		rigidbody2D.AddForce( Vector2.right * forwardSpeed ); //this moves the player forward to the right
 
+		//if jumping
 		if(didFlap) {
-			rigidbody2D.AddForce( Vector2.up * flapSpeed );
+			rigidbody2D.AddForce( Vector2.up * flapSpeed ); //this is for jumping
 			animator.SetTrigger("DoFlap");
-
-
 			didFlap = false;
 		}
 
+		//this stops the velocity from building up
 		if(rigidbody2D.velocity.y > 0) {
 			transform.rotation = Quaternion.Euler(0, 0, 0);
 		}
 		else {
-			//float angle = Mathf.Lerp (0, -90, (-rigidbody2D.velocity.y / 3f) );
-			//transform.rotation = Quaternion.Euler(0, 0, angle);
+			//this tilts the head down when he is dropping
+		//	float angle = Mathf.Lerp (0, -90, (-rigidbody2D.velocity.y / 3f) );
+		//	transform.rotation = Quaternion.Euler(0, 0, angle);
 		}
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		if(godMode)
-			return;
+		//if(godMode)
+		//	return;
 
-		animator.SetTrigger("Death");
-		dead = true;
-		deathCooldown = 0.5f;
+		//animator.SetTrigger("Death");
+		//dead = true;
+		//deathCooldown = 0.5f;
 	}
 }

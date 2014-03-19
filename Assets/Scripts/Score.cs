@@ -8,7 +8,7 @@ public class Score : MonoBehaviour {
 
 	static Score instance;
 
-	static public void AddScore() {
+	static public void AddPoint() {
 		if(instance.bird.dead)
 			return;
 
