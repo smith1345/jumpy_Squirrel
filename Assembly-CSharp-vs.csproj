@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\BGLooper.cs" />
      <Compile Include="Assets\Scripts\CameraTracksPlayer.cs" />
      <Compile Include="Assets\Scripts\GroundMover.cs" />
+     <Compile Include="Assets\Scripts\MovementController.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\ScorePoint.cs" />
      <Compile Include="Assets\Scripts\SquirelMovement.cs" />
