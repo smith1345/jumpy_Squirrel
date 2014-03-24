@@ -49,7 +49,7 @@
      <Compile Include="Assets\Scripts\BGLooper.cs" />
      <Compile Include="Assets\Scripts\CameraTracksPlayer.cs" />
      <Compile Include="Assets\Scripts\GroundMover.cs" />
-     <Compile Include="Assets\Scripts\MovementController.cs" />
+     <Compile Include="Assets\Scripts\NewMovement.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\ScorePoint.cs" />
      <Compile Include="Assets\Scripts\SquirelMovement.cs" />
@@ -58,8 +58,10 @@
      <Compile Include="Assets\Scripts\Testing\Entity.cs" />
      <Compile Include="Assets\Scripts\Testing\GameCamera.cs" />
      <Compile Include="Assets\Scripts\Testing\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Testing\MovementController.cs" />
      <Compile Include="Assets\Scripts\Testing\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Testing\PlayerPhysics.cs" />
+     <Compile Include="Assets\Scripts\Testing\SquirelMovementGood.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

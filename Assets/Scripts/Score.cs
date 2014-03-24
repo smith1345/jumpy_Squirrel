@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Score : MonoBehaviour {
@@ -9,8 +9,8 @@ public class Score : MonoBehaviour {
 	static Score instance;
 
 	static public void AddPoint() {
-		if(instance.bird.dead)
-			return;
+		//if(instance.squirel.dead)
+		//	return;
 
 		score++;
 
@@ -19,7 +19,7 @@ public class Score : MonoBehaviour {
 		}
 	}
 
-	SquirelMovement bird;
+	SquirelMovementGood bird;
 
 	void Start() {
 		instance = this;
@@ -28,7 +28,7 @@ public class Score : MonoBehaviour {
 			Debug.LogError("Could not find an object with tag 'Player'.");
 		}
 
-		bird = player_go.GetComponent<SquirelMovement>();
+		bird = player_go.GetComponent<SquirelMovementGood>();
 		score = 0;
 		highScore = PlayerPrefs.GetInt("highScore", 0);
 	}
