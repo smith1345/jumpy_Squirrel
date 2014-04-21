@@ -18,7 +18,7 @@ public class BGLooper : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D collider) {
+	void OnTriggerEnter(Collider collider) {
 		Debug.Log ("Triggered: " + collider.name);
 
 		//float widthOfBGObject = ((BoxCollider2D)collider).size.x;

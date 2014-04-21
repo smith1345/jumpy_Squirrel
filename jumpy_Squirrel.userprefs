@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GroundMover.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Squirrel3DMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\SquirelMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GroundMover.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Squirrel3DMovement.cs" Line="50" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
